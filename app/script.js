@@ -1,3 +1,5 @@
+// import { cardsConfig } from './config/config.js';
+
 const container = document.getElementById("cards");
 const searchInput = document.getElementById("search");
 const filterButtons = document.querySelectorAll(".filters button");
