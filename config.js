@@ -100,5 +100,16 @@ const cardsConfig = [
     date: "-",
     friends: ["Lynxara"]
   },
+    {
+    image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1751926051",
+    name: "Schedule I",
+    description:
+      "От мелкого наркоторговца до криминального авторитета — занимайтесь производством и распространением различных наркотиков в грязном городе Хайленд-Пойнт. Расширяйте свою империю, приобретая недвижимость, открывая новые предприятия, нанимая сотрудников и многое другое.",
+    // video: "",
+    link: "https://store.steampowered.com/app/3164500/Schedule_I/",
+    status: "not-completed",
+    date: "-",
+    friends: ["Lynxara"]
+  },
   
 ];
