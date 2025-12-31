@@ -40,6 +40,7 @@ function renderCards() {
           <div class="card-date">📅 ${formatDate(card.date)}</div>
           <h3>${card.name}</h3>
           <p>${card.description}</p>
+          ${card.friends ? `<p><strong>Друзья:</strong> ${card.friends.join(", ")}</p>` : ""}
           <p><strong>Статус:</strong> ${statusMap[card.status]}</p>
           ${card.video ? `<iframe src="${card.video}" frameborder="0" allowfullscreen></iframe>` : ""}
           <a href="${card.link}" target="_blank">Перейти</a>
