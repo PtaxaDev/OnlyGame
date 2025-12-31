@@ -1,24 +1,3 @@
-/*
-// placeholder
-
-  {
-    image: "",
-    name: "",
-    description:
-      "",
-    // video: "",
-    link: "https://store.steampowered.com/",
-    status: "completed",
-    date: "2022-11-10",
-  },
-
-    "completed": "Пройденно",
-    "not-completed": "Не пройденно",
-    "in-progress": "В процессе",
-    "rejected": "Забракованно"
-
-*/
-
 const cardsConfig = [
   {
     image:
