@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Карточки из конфига</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="text" id="search" placeholder="Поиск по названию...">
+
+<div class="filters">
+  <button data-status="all" class="active">Все</button>
+  <button data-status="completed">✅ Пройденно</button>
+  <button data-status="not-completed">❌ Не пройденно</button>
+  <button data-status="in-progress">⏳ В процессе</button>
+  <button data-status="rejected">🚫 Забракованно</button>
+</div>
+
+<main class="cards" id="cards"></main>
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
