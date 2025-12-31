@@ -16,7 +16,7 @@ body {
   margin: 20px auto;
   display: block;
   padding: 10px 14px;
-  border-radius: 8px;
+  border-radius: 24px;
   border: none;
   outline: none;
   font-size: 16px;
@@ -72,8 +72,9 @@ body {
 .card.completed { border-color: #2ecc71; }   /* зелёная */
 .card.not-completed { border-color: #e74c3c; } /* красная */
 .card.in-progress { border-color: #f1c40f; } /* жёлтая */
-.card.rejected { border-color: #9b59b6; }    /* фиолетовая */
+.card.rejected { border-color: #ffffff; }    /* фиолетовая */
 .card.infinity { border-color: #04d9f5; }
+.card.abandoned { border-color: #ff06f3; }
 
 
 

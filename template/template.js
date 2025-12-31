@@ -20,5 +20,6 @@
     "not-completed": "Не пройденно",
     "in-progress": "В процессе",
     "rejected": "Забракованно"
-
+    "infinity": "Сесионка"
+    "abandoned": "Заброшенно"
 */

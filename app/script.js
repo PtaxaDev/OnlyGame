@@ -12,7 +12,8 @@ const statusMap = {
   "not-completed": "Не пройденно",
   "in-progress": "В процессе",
   "rejected": "Забракованно",
-  "infinity": "Сесионка"
+  "infinity": "Сесионка", 
+  "abandoned": "Заброшенно"
 };
 
 // Форматирование даты
