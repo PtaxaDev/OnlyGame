@@ -73,6 +73,7 @@ body {
 .card.not-completed { border-color: #e74c3c; } /* красная */
 .card.in-progress { border-color: #f1c40f; } /* жёлтая */
 .card.rejected { border-color: #9b59b6; }    /* фиолетовая */
+.card.infinity { border-color: #04d9f5; }
 
 
 

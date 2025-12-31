@@ -9,7 +9,8 @@ const statusMap = {
   "completed": "Пройденно",
   "not-completed": "Не пройденно",
   "in-progress": "В процессе",
-  "rejected": "Забракованно"
+  "rejected": "Забракованно",
+  "infinity": "Сесионка"
 };
 
 // Форматирование даты
