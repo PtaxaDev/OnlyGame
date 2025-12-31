@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рулетка игр</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Навигационная панель -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="../../index.html" class="nav-logo">🏠 Главная</a>
+  </div>
+  <div class="navbar-right">
+    <a href="../../index.html" class="nav-link">📜 Список игр</a>
+    <a href="app/roulette/roulette.html" class="nav-link">🎰 Рулетка</a>
+  </div>
+</nav>
+
+<h1>🎰 Рулетка игр</h1>
+
+<div class="roulette-wrapper">
+  <div id="roulette"></div>
+</div>
+
+</a>
+
+<div class="controls">
+  <select id="statusSelect">
+    <option value="completed">✅ Пройденно</option>
+    <option value="in-progress">⏳ В процессе</option>
+    <option value="not-completed">❌ Не пройденно</option>
+    <option value="abandoned">🗑️ Заброшенно</option>
+    <option value="infinity">♻️ Сесионка</option>
+    <option value="rejected">🚫 Забракованно</option>
+  </select>
+
+  <button id="spin">Крутить</button>
+</div>
+
+<div id="result"></div>
+
+<!-- ВАЖНО: сначала конфиг -->
+<script src="../../config/config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

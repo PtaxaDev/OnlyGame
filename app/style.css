@@ -4,6 +4,42 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* === НАВИГАЦИЯ === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(20, 20, 30, 0.85);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left .nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right .nav-link {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar-right .nav-link:hover {
+  background: rgba(108, 99, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
 #title {
   margin: 0 auto;
   width: 50%;
@@ -106,4 +142,21 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 26px;
+  background: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #584ee0;
+  transform: translateY(-2px);
 }

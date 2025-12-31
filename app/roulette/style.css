@@ -1,0 +1,221 @@
+/* === BODY & FONTS === */
+body {
+  background: linear-gradient(180deg, #0e0e11 0%, #1a1a27 100%);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 36px;
+  text-shadow: 0 0 10px rgba(108, 99, 255, 0.7);
+}
+
+/* === НАВИГАЦИЯ === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(20, 20, 30, 0.85);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left .nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right .nav-link {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar-right .nav-link:hover {
+  background: rgba(108, 99, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.4);
+}
+
+/* === РУЛЕТКА === */
+.roulette-wrapper {
+  width: 520px;
+  height: 180px;
+  margin: 30px auto;
+  border-radius: 16px;
+  border: 2px solid #6c63ff;
+  box-shadow: inset 0 0 20px rgba(108, 99, 255, 0.3),
+              0 0 30px rgba(108, 99, 255, 0.5);
+  background: radial-gradient(circle at top, rgba(108,99,255,0.12), rgba(0,0,0,0.85));
+  overflow: hidden;
+  position: relative;
+}
+
+.roulette-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 60%);
+  pointer-events: none;
+  transform: rotate(45deg);
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% { transform: rotate(45deg) translateX(-50%) translateY(-50%); }
+  100% { transform: rotate(45deg) translateX(50%) translateY(50%); }
+}
+
+#roulette {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+/* === КАРТОЧКА === */
+.roulette-item {
+  width: 520px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, rgba(20,20,30,0.9), rgba(40,40,60,0.9));
+  border-bottom: 1px solid rgba(108, 99, 255, 0.2);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(4px);
+}
+
+.roulette-item:hover {
+  background: linear-gradient(135deg, rgba(30,30,50,0.95), rgba(60,60,80,0.95));
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(108, 99, 255, 0.5);
+}
+
+/* === КАРТИНКА === */
+.roulette-item img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.roulette-item:hover img {
+  transform: scale(1.05);
+}
+
+/* === НАЗВАНИЕ === */
+.roulette-item span {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+
+/* === КОНТРОЛЫ === */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #14141c;
+  color: #fff;
+  border: 1px solid #6c63ff;
+  outline: none;
+}
+
+button {
+  padding: 12px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6c63ff, #7f76ff);
+  color: #fff;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108,99,255,.4);
+  background: linear-gradient(135deg, #584ee0, #6c63ff);
+}
+
+button:active, .btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(108,99,255,.3);
+}
+
+/* === РЕЗУЛЬТАТ === */
+#result {
+  margin-top: 24px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+#result.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === ПУСТАЯ РУЛЕТКА === */
+.empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+}
+
+/* === КНОПКА ССЫЛКА === */
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #6c63ff, #7f76ff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108,99,255,.4);
+  background: linear-gradient(135deg, #584ee0, #6c63ff);
+}

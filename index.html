@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Карточки из конфига</title>
-  <link rel="stylesheet" href="app\style.css">
+  <link rel="stylesheet" href="app/style.css">
 </head>
 
 <body>
-  <div id="title">
-    <h1>Пройденные игры Ptaxa-и</h1>
+
+<!-- Навигационная панель -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="../../index.html" class="nav-logo">🏠 Главная</a>
   </div>
+  <div class="navbar-right">
+    <a href="../../index.html" class="nav-link">📜 Список игр</a>
+    <a href="app/roulette/roulette.html" class="nav-link">🎰 Рулетка</a>
+  </div>
+</nav>
 
 <input type="text" id="search" placeholder="Поиск по названию...">
 
@@ -26,9 +33,9 @@
 
 <main class="cards" id="cards"></main>
 
+<!-- СНАЧАЛА КОНФИГ -->
 <script src="config/config.js"></script>
-<script src="app\script.js"></script>
-
+<script src="app/script.js"></script>
 
 </body>
 </html>
